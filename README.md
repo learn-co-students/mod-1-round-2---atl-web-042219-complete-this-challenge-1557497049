@@ -24,12 +24,12 @@ Implement all of the methods described below
 
 ### `Viewer`
 
-+ `Viewer.all`
-  + returns all of the viewers
-+ `Viewer#queue_items`
-  + this method should return an array of `QueueItem` instances associated with this instance of `Viewer`.
-+ `Viewer#queue_movies`
-  + this method should return an array of `Movie` instances in the `Viewer`'s queue.
+<!-- + `Viewer.all`
+  + returns all of the viewers -->
+<!-- + `Viewer#queue_items`
+  + this method should return an array of `QueueItem` instances associated with this instance of `Viewer`. -->
+<!-- + `Viewer#queue_movies`
+  + this method should return an array of `Movie` instances in the `Viewer`'s queue. -->
 + `Viewer#add_movie_to_queue(movie)`
   + this method should receive a `Movie` instance as its only argument and add it to the `Viewer`'s queue
 + `Viewer#rate_movie(movie, rating)`
@@ -39,19 +39,19 @@ Implement all of the methods described below
 
 _A `QueueItem` object represents that an individual user has added a particular movie to their queue, and possibly rated it. **It is not the full queue, but a single item in the queue.**_
 
-+ `QueueItem.all`
+<!-- + `QueueItem.all`
   + returns an array of all `QueueItem`s
 + `QueueItem#viewer`
   + returns the viewer associated with this `QueueItem`
 + `QueueItem#movie`
   + returns the movie associated with this `QueueItem`
 + `QueueItem#rating`
-  + returns the rating for this `QueueItem`. If the viewer has not yet rated the movie, `QueueItem#rating` should be `nil`
+  + returns the rating for this `QueueItem`. If the viewer has not yet rated the movie, `QueueItem#rating` should be `nil` -->
 
 ### `Movie`
 
-+ `Movie.all`
-  + returns an array of all `Movie`
+<!-- + `Movie.all`
+  + returns an array of all `Movie` -->
 + `Movie#queue_items`
   + returns an array of all the `QueueItem` instances that contain this movie
 + `Movie#viewers`
