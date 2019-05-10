@@ -12,4 +12,17 @@ class Viewer
     @@all
   end
   
+  def queue_items
+    QueueItem.all.select{|item|item.viewer==self}
+  end
+
+  def queue_movies
+    Viewer.all.select{|queue|queue.viewer==self}
+  end
+
+  def add_movie_to_queue(title)
+
+  end
+
 end
+
