@@ -12,4 +12,10 @@ class Movie
     @@all
   end
 
+  def queue_items
+   QueueItem.all.select{|movie|movie.title == self}
+  end
+
+
+
 end
